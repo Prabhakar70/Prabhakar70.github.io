@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Prabhakar</title>
+  <meta name="description" content="Contact Prabhakar by email, LinkedIn or GitHub. Open to Data Science and Machine Learning internship opportunities.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://prabhakar70.github.io/contact.html">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prabhakar70.github.io/contact.html">
+  <meta property="og:site_name" content="Prabhakar">
+  <meta property="og:title" content="Contact | Prabhakar">
+  <meta property="og:description" content="Contact Prabhakar by email, LinkedIn or GitHub. Open to Data Science and Machine Learning internship opportunities.">
+
+  <!-- Applies the saved theme before the page paints, so there is no flash -->
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="site-header">
+    <noscript>
+      <nav class="container noscript-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </noscript>
+  </div>
+
+  <main id="main">
+
+    <!-- Page header -->
+    <section class="page-head" aria-labelledby="contact-title">
+      <div class="container">
+        <h1 id="contact-title">Contact</h1>
+        <p class="lead">I am interested in Data Science and Machine Learning internship opportunities. The quickest way to reach me is by email.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight-top" aria-label="Ways to contact me">
+      <div class="container contact-grid">
+
+        <div class="card contact-methods">
+          <h2 class="h3-size">Direct links</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-list__label">Email</span>
+              <a href="mailto:prabhakarkumar706598@gmail.com">prabhakarkumar706598@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-list__label">LinkedIn</span>
+              <a href="https://linkedin.com/in/prabhakar-kumar-9b9750328/" target="_blank" rel="noopener noreferrer">linkedin.com/in/prabhakar-kumar-9b9750328<span class="visually-hidden"> (opens in a new tab)</span></a>
+            </li>
+            <li>
+              <span class="contact-list__label">GitHub</span>
+              <a href="https://github.com/Prabhakar70" target="_blank" rel="noopener noreferrer">github.com/Prabhakar70<span class="visually-hidden"> (opens in a new tab)</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h2 class="h3-size" id="form-title">Message form</h2>
+
+          <p class="notice" role="note">
+            <strong>Sending is not connected yet.</strong> This form checks your details in your browser only. Nothing is sent or stored. To reach me, email me directly or use the button that appears after the form is checked.
+          </p>
+
+          <noscript><p class="notice">The form needs JavaScript. Please email me directly instead.</p></noscript>
+
+          <form class="contact-form" id="contact-form" novalidate aria-labelledby="form-title">
+            <div class="form-summary" id="form-summary" role="alert" tabindex="-1" hidden></div>
+
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" maxlength="80" required aria-describedby="cf-name-error">
+              <p class="field__error" id="cf-name-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" maxlength="120" required aria-describedby="cf-email-error">
+              <p class="field__error" id="cf-email-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="cf-subject">Subject <span class="field__opt">(optional)</span></label>
+              <input type="text" id="cf-subject" name="subject" maxlength="100">
+            </div>
+
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="6" maxlength="1000" required aria-describedby="cf-message-hint cf-message-error"></textarea>
+              <p class="field__hint text-small text-muted" id="cf-message-hint">At least 20 characters, up to 1000.</p>
+              <p class="field__error" id="cf-message-error" hidden></p>
+            </div>
+
+            <div class="btn-row">
+              <button type="submit" class="btn btn--primary">Check message</button>
+            </div>
+
+            <div class="form-result" id="form-result" role="status" hidden></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
