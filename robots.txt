@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://prabhakar70.github.io/sitemap.xml
