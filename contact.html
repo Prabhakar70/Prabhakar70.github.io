@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Professional Links — Prabhakar Kumar</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                Prabhakar <span>Kumar</span>
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="achievements.html" class="nav-link">Achievements</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+    <!-- Sun Icon for Dark mode / Moon for Light mode -->
+    <svg id="themeIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+    </svg>
+</button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <div class="container">
+            <!-- Page Header -->
+            <div style="margin-bottom: 3rem;">
+                <span class="card-badge">Get in Touch</span>
+                <h1 style="margin-top: 0.5rem; margin-bottom: 1rem;">Contact & Professional Links</h1>
+                <p style="font-size: 1.1rem; max-width: 700px;">
+                    Let's connect for data science collaborations, technical discussions, or professional inquiries. Feel free to reach out via email or professional networks.
+                </p>
+            </div>
+
+            <div class="grid-2" style="align-items: start; gap: 3rem; margin-bottom: 4rem;">
+                
+                <!-- Left Column: Professional Links & CV Download -->
+                <div>
+                    <h2 style="margin-bottom: 1.75rem; font-size: 1.5rem;">Professional Channels</h2>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2rem;">
+                        <!-- Email Card -->
+                        <div class="card" style="padding: 1.5rem;">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: var(--accent-primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Direct Email</span>
+                            <a href="mailto:prabhakarkumar706598@gmail.com" style="font-size: 1.05rem; font-weight: 600; color: var(--text-main); word-break: break-all;">
+                                prabhakarkumar706598@gmail.com
+                            </a>
+                        </div>
+
+                        <!-- GitHub Card -->
+                        <div class="card" style="padding: 1.5rem;">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: var(--accent-primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">GitHub Profile</span>
+                            <a href="https://github.com/Prabhakar70" target="_blank" style="font-size: 1.05rem; font-weight: 600; color: var(--text-main); word-break: break-all;">
+                                github.com/Prabhakar70
+                            </a>
+                        </div>
+
+                        <!-- LinkedIn Card -->
+                        <div class="card" style="padding: 1.5rem;">
+                            <span style="font-size: 0.85rem; font-weight: 600; color: var(--accent-primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">LinkedIn Profile</span>
+                            <a href="https://linkedin.com/in/prabhakar-kumar-9b9750328/" target="_blank" style="font-size: 1.05rem; font-weight: 600; color: var(--text-main); word-break: break-all;">
+                                linkedin.com/in/prabhakar-kumar-9b9750328/
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CV Download Box -->
+                    <div class="card" style="padding: 2rem; background-color: var(--bg-subtle);">
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Curriculum Vitae</h3>
+                        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            Download my formal CV detailing my education, technical stack, and verified credentials.
+                        </p>
+                        <a href="assets/documents/Prabhakar-Kumar-CV.pdf" target="_blank" class="btn btn-primary" style="width: 100%;">
+                            Download Full CV (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form with Mailto Fallback -->
+                <div>
+                    <div class="card" style="padding: 2.75rem;">
+                        <h2 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Send a Message</h2>
+                        <p style="font-size: 0.95rem; margin-bottom: 2rem;">
+                            Fill out the form below to send an email inquiry directly.
+                        </p>
+
+                        <form id="contactForm" onsubmit="handleContactSubmit(event)" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                            <div>
+                                <label for="senderName" style="display: block; font-size: 0.9rem; font-weight: 600; color: var(--text-main); margin-bottom: 0.5rem;">Your Name</label>
+                                <input type="text" id="senderName" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-size: 1rem; background-color: var(--bg-surface); color: var(--text-main); outline: none; transition: var(--transition);">
+                            </div>
+
+                            <div>
+                                <label for="senderEmail" style="display: block; font-size: 0.9rem; font-weight: 600; color: var(--text-main); margin-bottom: 0.5rem;">Your Email Address</label>
+                                <input type="email" id="senderEmail" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-size: 1rem; background-color: var(--bg-surface); color: var(--text-main); outline: none; transition: var(--transition);">
+                            </div>
+
+                            <div>
+                                <label for="emailSubject" style="display: block; font-size: 0.9rem; font-weight: 600; color: var(--text-main); margin-bottom: 0.5rem;">Subject</label>
+                                <input type="text" id="emailSubject" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-size: 1rem; background-color: var(--bg-surface); color: var(--text-main); outline: none; transition: var(--transition);">
+                            </div>
+
+                            <div>
+                                <label for="emailMessage" style="display: block; font-size: 0.9rem; font-weight: 600; color: var(--text-main); margin-bottom: 0.5rem;">Message</label>
+                                <textarea id="emailMessage" rows="4" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-size: 1rem; background-color: var(--bg-surface); color: var(--text-main); outline: none; transition: var(--transition); resize: vertical;"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                                Send Message via Email Client
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Clean Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2026 Prabhakar Kumar. Built for GitHub Pages (Prabhakar70.github.io).</p>
+        </div>
+    </footer>
+
+    <!-- Minimalist Vanilla JS for Mobile Toggle & Mailto Form Handler -->
+    <script>
+    // Mobile menu toggle
+    const mobileTrigger = document.getElementById('mobileTrigger') || document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (mobileTrigger) {
+        mobileTrigger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+    }
+
+    // Theme Toggle Logic
+    const themeToggle = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    
+    if (currentTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        let theme = document.documentElement.getAttribute('data-theme');
+        if (theme === 'dark') {
+            document.documentElement.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+
+    // Scroll Reveal Animation Logic
+    window.addEventListener('scroll', revealElements);
+    function revealElements() {
+        var reveals = document.querySelectorAll('.card, section');
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 100;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add('active');
+            }
+        }
+    }
+    // Trigger once on load
+    revealElements();
+</script>
+</body>
+</html>
